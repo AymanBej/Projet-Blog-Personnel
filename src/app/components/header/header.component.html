@@ -1,0 +1,12 @@
+<!-- app.component.html -->
+<nav id="navbar" class="navbar">
+  <h4>Ayman Bejaoui</h4>
+  <ul>
+    <li><a routerLink="" class="nav-link" [class.active]="activeLink === 'home'" (click)="setActiveLink('home')">Home</a></li>
+    <li><a routerLink="about" class="nav-link" [class.active]="activeLink === 'about'" (click)="setActiveLink('about')">About</a></li>
+    <li><a routerLink="resume" class="nav-link" [class.active]="activeLink === 'resume'" (click)="setActiveLink('resume')">Resume</a></li>
+    <li><a routerLink="services" class="nav-link" [class.active]="activeLink === 'services'" (click)="setActiveLink('services')">Services</a></li>
+    <li><a routerLink="skills" class="nav-link" [class.active]="activeLink === 'skills'" (click)="setActiveLink('skills')">Skills</a></li>
+    <li><a routerLink="contact" class="nav-link" [class.active]="activeLink === 'contact'" (click)="setActiveLink('contact')">Contact</a></li>
+  </ul>
+</nav>
